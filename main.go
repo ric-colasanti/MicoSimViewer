@@ -40,7 +40,7 @@ func main() {
 	router.HandleFunc("/echo", microsimserver.PushData)
 	router.HandleFunc("/", microsimserver.Home)
 
-	fmt.Println("Listening at port:5000")
-	openbrowser("http://127.0.0.1:5000")
-	http.ListenAndServe(":5000", router)
+	fmt.Println("Listening at port:5555")
+	openbrowser("http://127.0.0.1:5555")
+	http.ListenAndServe(":5555", router)
 }

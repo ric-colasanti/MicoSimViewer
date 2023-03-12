@@ -1,7 +1,7 @@
 console.log("MicrosimServer");
 var input = document.getElementById("input");
 var output = document.getElementById("output");
-var socket = new WebSocket("ws://127.0.0.1:5000/echo");
+var socket = new WebSocket("ws://127.0.0.1:5555/echo");
 
 socket.onopen = function () {
     output.innerHTML += "Status: Connected\n";
